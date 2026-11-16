@@ -6,4 +6,4 @@
 - 테마 고르기는 넣지 않는다 (사용자 요청). 기기 밝게/어둡게만 따른다.
 - 탭: 일정 · 관광지(`SIGHTS`, 일정에 안 넣은 곳 + 숙소에서 걸리는 어림 시간) · 먹을 곳 · 지출 · 정보(기본 정보 + 준비). 구글 Routes API 는 이 키로 막혀 있어 걸어서 시간은 직선거리 × 1.3 ÷ 70m/분으로 어림했다.
 - 지출 탭: 공금 숫자(`FUND` `PRE` `CASH_KRW` `CASH_JPY` `RATE`)는 경비 노트 2026-11-16 기준. 경비 노트가 바뀌면 같이 고친다. 공금이 400만원을 넘으면 넘친 만큼 ÷ 3, 개인이 대신 낸 돈은 돌려받을 돈으로 계산. 기록은 그 폰 localStorage 에만 저장된다 (기기끼리 공유 안 됨).
-- 다음 단계: 인터넷에 올리기 (PWA). 미리보기: 볼트 `.claude/launch.json` 의 `sapporo-plan` (8751).
+- 배포: 공개 저장소 `kimdg0116/sapporo-plan`, GitHub Pages https://kimdg0116.github.io/sapporo-plan/ (main 에 push 하면 자동 배포). 고칠 때마다 `sw.js` 의 `VERSION` 과 `version.json` 을 같이 올려야 폰에 「새 버전」 버튼이 뜬다. 미리보기: 볼트 `.claude/launch.json` 의 `sapporo-plan` (8751).
